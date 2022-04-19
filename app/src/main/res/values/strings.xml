@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Lab4</string>
+    <string name="main_activity_string">Main Activity</string>
+    <string name="profile_activity_string">Profile Activity</string>
+    <string name="main_button_text">Go to Profile</string>
+    <string name="profile_button_text">Go to Main Activity</string>
 </resources>

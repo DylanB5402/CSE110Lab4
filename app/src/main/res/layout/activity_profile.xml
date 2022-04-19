@@ -4,51 +4,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ProfileActivity">
 
     <TextView
-        android:id="@+id/main_activity_text"
+        android:id="@+id/profile_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/main_activity_string"
+        android:text="@string/profile_activity_string"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077" />
 
     <Button
-        android:id="@+id/main_activity_button"
+        android:id="@+id/profile_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
-        android:onClick="onLaunchProfileClicked"
-        android:text="@string/main_button_text"
+        android:layout_marginTop="316dp"
+        android:onClick="onLaunchMainClicked"
+        android:text="@string/profile_button_text"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_activity_text" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_text" />
 
     <EditText
-        android:id="@+id/max_count_view"
+        android:id="@+id/name_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="36dp"
         android:ems="10"
-        android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:inputType="textPersonName"
+        android:hint="Name"
+        app:layout_constraintStart_toStartOf="@+id/state_textview"
+        app:layout_constraintTop_toBottomOf="@+id/state_textview" />
 
-    <Button
-        android:id="@+id/max_count_button"
+    <EditText
+        android:id="@+id/state_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="53dp"
-        android:text="Show Counter"
-        android:onClick="onShowCounterClicked"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Status"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/max_count_view" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_text" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
